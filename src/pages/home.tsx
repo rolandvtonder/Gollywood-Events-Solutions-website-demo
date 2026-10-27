@@ -2,7 +2,7 @@ import { mountPage } from '../Layout'
 import Stage from '../Stage'
 import Reveal, { SectionHead } from '../Reveal'
 import Icon from '../Icon'
-import { HREF } from '../site'
+import { HREF, u } from '../site'
 
 /*
   Home: the scroll-choreographed stage, then one row that hands visitors on
@@ -10,10 +10,10 @@ import { HREF } from '../site'
 */
 
 const EXPLORE = [
-  { t: 'Services', d: 'Weddings, birthdays, corporate functions and catering.', href: HREF.services, img: '/assets/svc-weddings.webp' },
-  { t: 'Equipment hire', d: 'Chairs, tableware, chafing dishes, lights and arches.', href: HREF.hire, img: '/assets/hire-chairs.webp' },
-  { t: 'Gallery', d: 'Table settings, décor and venue styling ideas.', href: HREF.gallery, img: '/assets/g-4.webp' },
-  { t: 'Get a quote', d: 'Tell us about your event and we’ll reply on WhatsApp.', href: HREF.contact, img: '/assets/g-1.webp' },
+  { t: 'Services', d: 'Weddings, birthdays, corporate functions and catering.', href: HREF.services, img: u('assets/svc-weddings.webp') },
+  { t: 'Equipment hire', d: 'Chairs, tableware, chafing dishes, lights and arches.', href: HREF.hire, img: u('assets/hire-chairs.webp') },
+  { t: 'Gallery', d: 'Table settings, décor and venue styling ideas.', href: HREF.gallery, img: u('assets/g-4.webp') },
+  { t: 'Get a quote', d: 'Tell us about your event and we’ll reply on WhatsApp.', href: HREF.contact, img: u('assets/g-1.webp') },
 ]
 
 function Explore() {

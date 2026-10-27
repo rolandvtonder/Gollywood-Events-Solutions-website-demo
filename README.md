@@ -18,3 +18,9 @@ Then open the address it prints (usually http://localhost:5173).
 Contact details, services, hire items and gallery photos all live in `src/site.ts`. Photos are in `public/assets/`.
 
 The photos in this demo are free stock images from Unsplash and are placeholders for the business's own event photos.
+
+## Live demo (GitHub Pages)
+
+Every push to `main` rebuilds the site and publishes it to
+https://rolandvtonder.github.io/Gollywood-Events-Solutions-website-demo/
+(workflow: `.github/workflows/deploy.yml`). One-time setup: **Settings → Pages → Source: GitHub Actions**.

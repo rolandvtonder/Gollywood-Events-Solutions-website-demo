@@ -1,5 +1,6 @@
 import { mountPage } from '../Layout'
 import PageHero from '../PageHero'
+import { u } from '../site'
 import Gallery from '../sections/Gallery'
 
 mountPage(
@@ -12,7 +13,7 @@ mountPage(
         </>
       }
       intro="Table settings, décor and venue styling to spark ideas for your own celebration."
-      img="/assets/scene-3.webp"
+      img={u('assets/scene-3.webp')}
     />
     <Gallery />
   </>,

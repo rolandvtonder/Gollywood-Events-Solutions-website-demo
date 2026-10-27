@@ -1,5 +1,6 @@
 import { mountPage } from '../Layout'
 import PageHero from '../PageHero'
+import { u } from '../site'
 import Services from '../sections/Services'
 
 mountPage(
@@ -12,7 +13,7 @@ mountPage(
         </>
       }
       intro="Book one service or hand us the whole day. Either way you deal with one team that plans, delivers, sets up and clears away."
-      img="/assets/svc-weddings.webp"
+      img={u('assets/svc-weddings.webp')}
       pos="50% 55%"
     />
     <Services />

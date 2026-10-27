@@ -1,5 +1,6 @@
 import { mountPage } from '../Layout'
 import PageHero from '../PageHero'
+import { u } from '../site'
 import Contact from '../sections/Contact'
 
 mountPage(
@@ -12,7 +13,7 @@ mountPage(
         </>
       }
       intro="Tell us the basics and we'll reply on WhatsApp with ideas, availability and a quote. Prefer to talk? Call the office."
-      img="/assets/scene-2.webp"
+      img={u('assets/scene-2.webp')}
       pos="50% 40%"
     />
     <Contact />

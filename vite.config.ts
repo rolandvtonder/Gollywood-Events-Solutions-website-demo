@@ -9,6 +9,9 @@ import tailwindcss from '@tailwindcss/vite'
 const pages = ['services', 'hire', 'gallery', 'contact']
 
 export default defineConfig({
+  /* '/' locally. The GitHub Pages workflow sets BASE_PATH to the repository's
+     folder, because a project site is served from /<repo>/, not the root. */
+  base: process.env.BASE_PATH || '/',
   appType: 'mpa',
   plugins: [react(), tailwindcss()],
   build: {

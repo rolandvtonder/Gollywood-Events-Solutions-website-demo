@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { useScroll, useMotionValueEvent, useReducedMotion } from 'motion/react'
 import { SCROLL_VH, TOTAL_MS, P, G, STAGE, span, ramp, lerp, type Layout } from './scroll'
-import { HREF, LIME } from './site'
+import { HREF, LIME, u } from './site'
 import Icon from './Icon'
 
 /*
@@ -29,9 +29,9 @@ const box = (x: number, y: number, w?: number, h?: number): CSSProperties => ({
 })
 
 const SCENES = [
-  { src: '/assets/scene-2.webp', pos: '50% 38%' },
-  { src: '/assets/scene-1.webp', pos: '50% 50%' },
-  { src: '/assets/scene-3.webp', pos: '50% 45%' },
+  { src: u('assets/scene-2.webp'), pos: '50% 38%' },
+  { src: u('assets/scene-1.webp'), pos: '50% 50%' },
+  { src: u('assets/scene-3.webp'), pos: '50% 45%' },
 ]
 
 const WORDS = ['Elegant.', 'Effortless.', 'Unforgettable.']
@@ -476,7 +476,7 @@ export default function Stage() {
                 >
                   <div style={{ position: 'absolute', inset: 0, borderRadius: px(l.card.r), overflow: 'hidden' }}>
                     <img
-                      src={`/assets/${CARD_ART[i]}.webp`}
+                      src={u(`assets/${CARD_ART[i]}.webp`)}
                       alt=""
                       loading="lazy"
                       className="transition-transform duration-500 group-hover:scale-[1.06]"
