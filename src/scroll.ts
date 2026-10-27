@@ -60,7 +60,9 @@ export const G = {
     g3: { enter: 1400, mid: 740, end: 144 },
   },
   mobile: {
-    g1: { start: 96, end: -820 },
+    /* 110 keeps the eyebrow clear of the header even on a short window, and
+       the card still ends at 702 inside the 740 artboard */
+    g1: { start: 110, end: -820 },
     g2: { enter: 900, mid: 110, end: -1000 },
     g3: { enter: 1200, mid: 760, end: 200 },
   },
